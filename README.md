@@ -1,6 +1,6 @@
 # Bakalářská práce: Ovládání kolaborativního robota UR3 pomocí hlasu
 
-Tento repozitář obsahuje kódy vytvořené pro bakalářskou práci zaměřenou na ovládání kolaborativního robota UR3 pomocí hlasu. Repozitář je rozdělen do dvou hlavních částí: ovládání robota a převádění řeči na text.
+Tento repozitář obsahuje kódy vytvořené pro bakalářskou práci zaměřenou na ovládání kolaborativního robota UR3 pomocí hlasu. Repozitář je rozdělen do dvou hlavních částí: program pro ovládání robota hlasem a kódy pro převod řeči na text pomocí 3 různých systémů.
 
 ## Struktura repozitáře
 
