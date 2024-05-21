@@ -10,16 +10,16 @@ Tato část obsahuje kódy pro ovládání kolaborativního robota UR3 pomocí h
 
 - **main.py**: Hlavní spouštěcí skript, který integruje všechny moduly.
 - **robot_controller.py**: Modul pro řízení robota UR3.
-- **voice_command_handler.py**: Modul pro zpracování hlasových příkazů a jejich přeměnu na akce pro robota.
+- **voice_command_handler.py**: Modul pro zpracování hlasových příkazů.
 - **configuration.py**: Konfigurační soubor obsahující nastavení a parametry pro ovládání robota.
 
 ### speech_recognition
 
 Tato část obsahuje kódy pro převádění řeči na text pomocí různých služeb:
 
-- **google_speech_recognition/Google_Speech_Recognition.py**: Kód pro převádění řeči na text pomocí Google Speech Recognition API.
-- **whisper/Whisper.py**: Kód pro převádění řeči na text pomocí Whisper.
-- **ibm_watson_speech_to_text/IBM_Watson_Speech_to_Text.py**: Kód pro převádění řeči na text pomocí IBM Watson Speech to Text API.
+- **google_speech_recognition/Google_Speech_Recognition.py**: Kód pro převádění řeči na text pomocí Google Web Speech API.
+- **whisper/Whisper.py**: Kód pro převádění řeči na text pomocí modelu Whisper.
+- **ibm_watson_speech_to_text/IBM_Watson_Speech_to_Text.py**: Kód pro převádění řeči na text pomocí služby IBM Watson Speech to Text API.
 
 ## Instalace a použití
 
