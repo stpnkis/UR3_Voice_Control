@@ -27,7 +27,7 @@ Tato část obsahuje kódy pro převádění řeči na text pomocí různých sl
 
 1. Klonujte tento repozitář:
     ```bash
-    git clone https://github.com/stpnkis/UR3_hlasove_ovladani.git
+    git clone https://github.com/stpnkis/BP_UR3_hlasove_ovladani.git
     cd UR3_hlasove_ovladani
     ```
 
