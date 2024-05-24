@@ -1,3 +1,4 @@
 pygame
+pyaudio
 ur_rtde
-speech_recognition
+speechrecognition
