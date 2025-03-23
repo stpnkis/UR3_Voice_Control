@@ -1,81 +1,81 @@
-# Bakalářská práce: Ovládání kolaborativního robota UR3 pomocí hlasu
+# Bachelor's Thesis: Voice Control of UR3 Collaborative Robot
 
-Tento repozitář obsahuje kódy vytvořené pro bakalářskou práci zaměřenou na ovládání kolaborativního robota UR3 pomocí hlasu. Repozitář je rozdělen do dvou hlavních částí: program pro ovládání robota hlasem a kódy pro převod řeči na text pomocí 3 různých systémů.
+This repository contains code created for a bachelor's thesis focused on voice control of the UR3 collaborative robot. The repository is divided into two main parts: the program for controlling the robot via voice commands and code for speech-to-text conversion using three different systems.
 
-## Struktura repozitáře
+## Repository Structure
 
-### UR3_hlasove_ovladani
+### ur3_voice_control
 
-Tato část obsahuje kódy pro ovládání kolaborativního robota UR3 pomocí hlasových příkazů. Skládá se ze čtyř modulů:
+This section contains the code for controlling the UR3 collaborative robot through voice commands. It consists of four modules:
 
-- **main.py**: Hlavní spouštěcí skript, který integruje všechny moduly.
-- **robot_controller.py**: Modul pro řízení robota UR3.
-- **voice_command_handler.py**: Modul pro zpracování hlasových příkazů.
-- **configuration.py**: Konfigurační soubor obsahující nastavení a parametry pro ovládání robota.
+- **main.py**: Main executable script integrating all modules.
+- **robot_controller.py**: Module responsible for controlling the UR3 robot.
+- **voice_command_handler.py**: Module handling voice command processing.
+- **configuration.py**: Configuration file containing parameters and settings for robot control.
 
-### Rozpoznavani_reci
+### speech_recognition
 
-Tato část obsahuje kódy pro převádění řeči na text pomocí různých služeb:
+This section contains scripts for speech-to-text conversion using various services:
 
-- **Google_Speech_Recognition/Google_Speech_Recognition.py**: Kód pro převádění řeči na text pomocí Google Web Speech API.
-- **Whisper/Whisper.py**: Kód pro převádění řeči na text pomocí modelu Whisper.
-- **IBM_Watson_Speech_to_Text/IBM_Watson_Speech_to_Text.py**: Kód pro převádění řeči na text pomocí služby IBM Watson Speech to Text API.
+- **Google_Speech_Recognition/Google_Speech_Recognition.py**: Script using Google Web Speech API for speech-to-text conversion.
+- **Whisper/Whisper.py**: Script using the Whisper model for speech-to-text conversion.
+- **IBM_Watson_Speech_to_Text/IBM_Watson_Speech_to_Text.py**: Script using IBM Watson Speech to Text API for speech-to-text conversion.
 
-## Instalace a použití
+## Installation and Usage
 
-### Ovládání robota UR3
+### UR3 Robot Voice Control
 
-1. Klonujte tento repozitář:
+1. Clone this repository:
     ```bash
-    git clone https://github.com/stpnkis/BP_UR3_hlasove_ovladani.git
-    cd BP_UR3_hlasove_ovladani/UR3_hlasove_ovladani
+    git clone https://github.com/stpnkis/UR3_Voice_Control.git
+    cd UR3_Voice_Control/ur3_voice_control
     ```
 
-2. Nainstalujte potřebné závislosti:
+2. Install necessary dependencies:
     ```bash
-    pip install -r UR3_hlasove_ovladani/requirements.txt
+    pip install -r ur3_voice_control/requirements.txt
     ```
 
-3. Konfigurujte parametry v `configuration.py` podle vašich potřeb.
+3. Configure parameters in `configuration.py` according to your needs.
 
-4. Spusťte hlavní program:
+4. Run the main script:
     ```bash
-    python UR3_hlasove_ovladani/main.py
+    python ur3_voice_control/main.py
     ```
 
-### Převádění řeči na text
+### Speech-to-Text Conversion
 
-1. Nainstalujte potřebné závislosti pro jednotlivé skripty:
+1. Install necessary dependencies for each script:
 
-    - Google_Speech_Recognition:
+    - Google Speech Recognition:
         ```bash
-        pip install -r Rozpoznavani_reci/Google_Speech_Recognition/requirements.txt
+        pip install -r speech_recognition/Google_Speech_Recognition/requirements.txt
         ```
 
     - Whisper:
         ```bash
-        pip install -r Rozpoznavani_reci/Whisper/requirements.txt
+        pip install -r speech_recognition/Whisper/requirements.txt
         ```
 
-    - IBM_Watson_Speech_to_Text:
+    - IBM Watson Speech to Text:
         ```bash
-        pip install -r Rozpoznavani_reci/IBM_Watson_Speech_to_Text/requirements.txt
+        pip install -r speech_recognition/IBM_Watson_Speech_to_Text/requirements.txt
         ```
 
-2. Spusťte jednotlivé skripty pro převod řeči na text:
-    - Google_Speech_Recognition:
+2. Run individual scripts for speech-to-text conversion:
+
+    - Google Speech Recognition:
         ```bash
-        python Rozpoznavani_reci/Google_Speech_Recognition/Google_Speech_Recognition.py
+        python speech_recognition/Google_Speech_Recognition/Google_Speech_Recognition.py
         ```
+
     - Whisper:
         ```bash
-        python Rozpoznavani_reci/Whisper/Whisper.py
+        python speech_recognition/Whisper/Whisper.py
         ```
-    - IBM_Watson_Speech_to_Text:
+
+    - IBM Watson Speech to Text:
         ```bash
-        python Rozpoznavani_reci/IBM_Watson_Speech_to_Text/IBM_Watson_Speech_to_Text.py
+        python speech_recognition/IBM_Watson_Speech_to_Text/IBM_Watson_Speech_to_Text.py
         ```
-
-
-
 
