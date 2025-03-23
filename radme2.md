@@ -1,19 +1,19 @@
-# Bachelor's Thesis: Voice Control of the UR3 Collaborative Robot
+## Bachelor's Thesis: Voice Control of UR3 Collaborative Robot
 
-This repository contains the code developed for a bachelor's thesis focused on controlling the UR3 collaborative robot using voice commands. The repository is divided into two main parts: voice-controlled robot application and speech-to-text conversion scripts utilizing three different systems.
+This repository contains code created for a bachelor's thesis focused on voice control of the UR3 collaborative robot. The repository is divided into two main parts: the program for controlling the robot via voice commands and code for speech-to-text conversion using three different systems.
 
 ## Repository Structure
 
-### UR3_Voice_Control
+### ur3_voice_control
 
 This section contains the code for controlling the UR3 collaborative robot through voice commands. It consists of four modules:
 
-- **main.py**: The main execution script integrating all modules.
+- **main.py**: Main executable script integrating all modules.
 - **robot_controller.py**: Module responsible for controlling the UR3 robot.
 - **voice_command_handler.py**: Module handling voice command processing.
 - **configuration.py**: Configuration file containing parameters and settings for robot control.
 
-### Speech_Recognition
+### speech_recognition
 
 This section contains scripts for speech-to-text conversion using various services:
 
@@ -27,55 +27,55 @@ This section contains scripts for speech-to-text conversion using various servic
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/stpnkis/BP_UR3_hlasove_ovladani.git
-    cd BP_UR3_hlasove_ovladani/UR3_Voice_Control
+    git clone https://github.com/stpnkis/UR3_Voice_Control.git
+    cd UR3_Voice_Control/ur3_voice_control
     ```
 
-2. Install required dependencies:
+2. Install necessary dependencies:
     ```bash
-    pip install -r UR3_Voice_Control/requirements.txt
+    pip install -r ur3_voice_control/requirements.txt
     ```
 
 3. Configure parameters in `configuration.py` according to your needs.
 
 4. Run the main script:
     ```bash
-    python UR3_Voice_Control/main.py
+    python ur3_voice_control/main.py
     ```
 
 ### Speech-to-Text Conversion
 
-1. Install required dependencies for each script:
+1. Install necessary dependencies for each script:
 
     - Google Speech Recognition:
         ```bash
-        pip install -r Speech_Recognition/Google_Speech_Recognition/requirements.txt
+        pip install -r speech_recognition/Google_Speech_Recognition/requirements.txt
         ```
 
     - Whisper:
         ```bash
-        pip install -r Speech_Recognition/Whisper/requirements.txt
+        pip install -r speech_recognition/Whisper/requirements.txt
         ```
 
     - IBM Watson Speech to Text:
         ```bash
-        pip install -r Speech_Recognition/IBM_Watson_Speech_to_Text/requirements.txt
+        pip install -r speech_recognition/IBM_Watson_Speech_to_Text/requirements.txt
         ```
 
-2. Run the respective scripts for speech-to-text conversion:
+2. Run individual scripts for speech-to-text conversion:
 
     - Google Speech Recognition:
         ```bash
-        python Speech_Recognition/Google_Speech_Recognition/Google_Speech_Recognition.py
+        python speech_recognition/Google_Speech_Recognition/Google_Speech_Recognition.py
         ```
 
     - Whisper:
         ```bash
-        python Speech_Recognition/Whisper/Whisper.py
+        python speech_recognition/Whisper/Whisper.py
         ```
 
     - IBM Watson Speech to Text:
         ```bash
-        python Speech_Recognition/IBM_Watson_Speech_to_Text/IBM_Watson_Speech_to_Text.py
+        python speech_recognition/IBM_Watson_Speech_to_Text/IBM_Watson_Speech_to_Text.py
         ```
 
