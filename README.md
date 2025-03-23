@@ -2,6 +2,9 @@
 
 This repository contains code created for a bachelor's thesis focused on voice control of the UR3 collaborative robot. The repository is divided into two main parts: the program for controlling the robot via voice commands and code for speech-to-text conversion using three different systems.
 
+[Full thesis (in Czech)](https://hdl.handle.net/11012/247985)
+
+
 ## Repository Structure
 
 ### ur3_voice_control
